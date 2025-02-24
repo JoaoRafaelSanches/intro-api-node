@@ -1,0 +1,12 @@
+{
+  "name": "intro-api-node",
+  "version": "1.0.0",
+  "description": "Aula de introdução API NODE JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["api", "node JS", "MYSQL"],
+  "author": "João Rafael",
+  "license": "MIT"
+}
