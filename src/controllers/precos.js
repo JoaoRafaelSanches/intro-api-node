@@ -1,7 +1,7 @@
 const db = require(/dataBase/connection.js);
 
 module.exports = {
-    async listarPreco(request, response) {
+    async listarPrecos(request, response) {
         try {
             return response.status(200).json({
 
