@@ -5,6 +5,6 @@ const UsuariosController = require('../controllers/usuarios');
 const PrecosController = require('../controllers/precos');
 
 router.get('/usuarios', UsuariosController.listarUsuarios);
-router.get('/usuarios', PrecosController.listarPrecos);
+router.get('/precos', PrecosController.listarPrecos);
 
 module.exports = router;

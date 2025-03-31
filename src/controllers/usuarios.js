@@ -1,4 +1,4 @@
-const db = require(/dataBase/connection.js);
+const db = require('../dataBase/connection');
 
 module.exports = {
     async listarUsuarios(request, response) {
