@@ -4,10 +4,15 @@ module.exports = {
   // Listar todos os preços
   async listarPreco(request, response) {
     try {
+      const sql = 'SELECT pre_id, med_id, preco, ativo = 1 AS ativo FROM precos;';
+
+      const [rows] = await db.query(sql);
+      
       return response.status(200).json({
         sucesso: true,
         mensagem: 'Lista de Preços.',
-        dados: null
+        itens: rows.lenght,
+        dados: rows
       });
     }catch (error) {
       return response.status(500).json({
